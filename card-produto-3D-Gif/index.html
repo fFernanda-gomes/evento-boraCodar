@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sytleCP.css">
-    <script src="./scriptCP.js"></script>
     <title>Sofá Margot II - Rosé</title>
 </head>
 <body>
     <section>
         <div class="image">
-            <img src="./assets/img-sofa.svg" alt="imagem do sofá oferecido na propaganda" class="sofaImg">
+            <img id="sofaImg" src="./assets/img-sofa.svg" alt="imagem do sofá oferecido na propaganda" >
+
+            <img id="sofa-gif" class="hide" src="./assets/animationSofa.gif" alt="">
     
-            <button class="button-360">
+            <button id="buttonOpen">
                 <img src="./assets/icon-360g.svg" alt="" >
+            </button>
+            <button id="close-view" class="hide">
+                <img src="./assets/exit-gif.svg" alt="">
             </button>
         </div>
     
@@ -29,5 +33,7 @@
             </button>
         </div>
     </section>
+
+    <script src="./scriptCP.js"></script>
 </body>
 </html>

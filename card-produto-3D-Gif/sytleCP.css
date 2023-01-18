@@ -36,7 +36,12 @@ section {
     height: 253px;
 }
 
-.button-360 {
+#sofa-gif {
+    width: 449px;
+    height: 253px;
+}
+
+#buttonOpen {
     border: none;
     background: transparent;
     width: 33px;
@@ -45,13 +50,36 @@ section {
     position: relative;
     right: 75px;
     bottom: 222.53px;
+
+    cursor: pointer;
 }
 
-.button-360 img {
+#buttonOpen img {
     width: 33px;
     height: 22.47px;  
 }
 
+#close-view {
+    border: none;
+    background: transparent;
+    width: 33px;
+    height: 22.47px;
+
+    position: relative;
+    right: 75px;
+    bottom: 222.53px;
+
+    cursor: pointer;
+}
+
+#close-view img {
+    width: 33px;
+    height: 22.47px;
+}
+
+.hide {
+    display: none;
+}
 
 h1 {
     font-weight: 600;
@@ -88,6 +116,8 @@ p, span {
 
     border: 1px solid var(--color-text);
     background-color: transparent;
+
+    cursor: pointer;
 }
 
 .bnt-adicionar span {
