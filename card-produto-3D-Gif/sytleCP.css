@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-cardCP: #D9CDF7;
+    --bg-body: #1E1E1E;
+    --color-text: #271A45;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+
+    background-color: var(--bg-body);
+}
+
+section {
+    width: 875px;
+    height: 498px;
+    border-radius: 9.6px;
+
+    background-color: var(--bg-cardCP);
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 449px;
+    height: 253px;
+}
+
+.button-360 {
+    border: none;
+    background: transparent;
+    width: 33px;
+    height: 22.47px;
+    
+    position: relative;
+    right: 75px;
+    bottom: 222.53px;
+}
+
+.button-360 img {
+    width: 33px;
+    height: 22.47px;  
+}
+
+
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--color-text);
+    font-family: 'Crimson Pro', serif;
+
+    margin-bottom: 12px;
+}
+
+p, span {
+    font-family: 'Lato', sans-serif;
+}
+
+.codigo {
+    font-weight: 300;
+    font-size: 10px;
+    color: var(--color-text);
+
+    margin-bottom: 12px;
+}
+
+.preco {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text);
+
+    margin-bottom: 20px;
+}
+
+.bnt-adicionar {
+    border-radius: 999px;
+    padding: 8px 16px;
+
+    border: 1px solid var(--color-text);
+    background-color: transparent;
+}
+
+.bnt-adicionar span {
+
+    border: none;
+    font-weight: 400;
+    color: var(--color-text);
+    font-size: 12px;
+}
