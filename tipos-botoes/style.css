@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+th {
+    background-color: #1C162C;
+    color: #ffff;
+
+    padding: 16px 15.5px;
+}
+
+button {
+    text-transform: uppercase;
+}
