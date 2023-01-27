@@ -24,7 +24,7 @@ body {
 
 table {
     border: none;
-    border-collapse: collapse;
+    border-collapse: collapse; 
 }
 
 .header-th {
