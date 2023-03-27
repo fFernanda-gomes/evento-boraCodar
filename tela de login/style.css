@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+#page {
+    height: 100vh;
+}
+
+#page > * {
+    width: 50%;
+}
+
+#page > div {
+    padding: 2.5rem 7rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header img {
+    width: 9.968rem;
+    height: 3.375rem;
+    object-fit: contain;
+}
+
+main {
+    margin-top: 7.125rem;
+}
+
+.headline {
+    max-width: 21.87rem;
+}
+
+form {
+    margin-top: 2.5rem;
+}
+
+
+form button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+
+    font-weight: bold;
+    background: #7c3aed;
+    color: #ffff;
+
+    margin-block: 2rem;
+}
+
+form button:active,
+form button:focus,
+form button:hover {
+    background-color: #9f67ff;
+}
