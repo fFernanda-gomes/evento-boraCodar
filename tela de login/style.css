@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+button {
+    all: unset;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #7c3aed;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .flex {
@@ -33,19 +51,93 @@ header img {
 
 main {
     margin-top: 7.125rem;
+    max-width: 24rem;
 }
 
 .headline {
     max-width: 21.87rem;
 }
 
+h1 {
+    font-size: 2.25rem;
+    line-height: 3.44rem;
+    color: #1e293b;
+}
+
+h1 + p {
+    color: #475569;
+    margin: 1rem;
+}
+
 form {
     margin-top: 2.5rem;
 }
 
+label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.312rem;
+    color: #1e293b;
+}
+
+.label-wrapper {
+    justify-content: space-between;
+}
+
+.label-wrapper label + a {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.312rem;
+}
+
+
+form input {
+    width: 100%;
+
+    background: #ffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+
+    padding: 1rem 0.75rem;
+    margin-top: 0.5rem;
+
+    color: #1e293b;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid #7c3aed;
+    outline: 0;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+form .input-wrapper + .input-wrapper { /*form input que tem um input anterior a ele*/
+    margin-top: 1rem;
+}
+
+input::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.132rem;
+    color: #94a3b8;
+}
+
+.eye {
+    width: 1.125rem;
+    height: 1.25rem;
+
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+
+.hide {
+    display: none;
+}
 
 form button {
-    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +153,32 @@ form button {
     margin-block: 2rem;
 }
 
-form button:active,
 form button:focus,
 form button:hover {
     background-color: #9f67ff;
+}
+
+
+@media (max-width: 900px) {
+    #page > * {
+        width: 100%;
+    }
+
+    #page > img {
+        display: none;
+    }
+
+    #page > div {
+       padding: 6.875rem; 
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #page > div {
+       padding: 2.5rem; 
+    }
 }
