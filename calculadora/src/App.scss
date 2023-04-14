@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 .master {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     background:  linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
 
@@ -15,59 +17,63 @@
 
 .bgCal {
     width: 22.25rem;
-    height: 33.37rem;
-    margin: auto;
-
-    background: #2D2A37;
-
+    height: 35.375rem;
+    background: rgba(45, 42, 55, 1);
     border-radius: 48px;
-    padding: 0rem 2rem 0rem 2rem;
-}
-
-.bgCal {
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
-
-    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.29);
-
-    box-shadow: 0px 29px 29px 0px rgba(0, 0, 0, 0.26);
-
-    box-shadow: 1px 64px 39px 0px rgba(0, 0, 0, 0.15);
-
-    box-shadow: 1px 114px 46px 0px rgba(0, 0, 0, 0.04);
-
-    box-shadow: 2px 179px 50px 0px rgba(0, 0, 0, 0.01);
-
 }
 
 .top {
+    margin-top: 3.375rem;
+    margin-inline: 2.25rem 2rem;
     width: 18rem;
-    height: 5.375rem;
+    height: 5.5rem;
+}
 
-    padding-top: 3.375rem;
+.top img {
+    margin-left: 1.1rem;
+    position: relative;
+    margin-top: 3.4rem;
 }
 
 .keyboard {
     width: 18.25rem;
     height: 23rem;
-    padding-top: 1.625rem;
-
+    margin: 1.625rem 2rem 2rem 2rem;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     gap: 0.75rem;
 }
 
-button {
-    background: #2D2A37; 
-    border-radius: 999px;
-
-    width: 4rem;
-    height: 4rem;
-
+.first {
+    color: #975DFA;
 }
 
+button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), linear-gradient(0deg, #2D2A37, #2D2A37);
+    border: none;
 
-img {
-    width: 1.75rem;
-    height: 1.75rem;
+    box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+// inside button
+button {
+    color: #EBEBEB;
+    font-size: 1.5rem;
+}
+
+.bg-purple {
+    background: #462878;
+}
+
+.bg-change {
+    background: #7F45E2;
 }
